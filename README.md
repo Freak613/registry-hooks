@@ -13,7 +13,8 @@ npm install registry-hooks
 ## HowTo
 
 ```javascript
-// Create driver utility, used for connecting tokens with external resource, handling subscriptions and performance optimizations
+// Create driver utility, used for connecting tokens with external resource,
+// handling subscriptions and performance optimizations
 const createStateSubscription = (source, token, getValue) => {
   // Useful for adhering retrieved entity to defined model
   const valueSelector = createSelectorWithModel(getValue, token.model);
