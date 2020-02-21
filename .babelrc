@@ -1,0 +1,16 @@
+{
+  "env": {},
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "debug": false,
+        "modules": false,
+        "loose": true,
+        "targets": {
+          "browsers": "defaults"
+        }
+      }
+    ]
+  ]
+}
