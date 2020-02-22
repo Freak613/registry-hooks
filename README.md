@@ -27,7 +27,7 @@ const Todo = {
   }
 };
 
-// Use driver and registry to resolve and instantiate resources
+// Create registry and Provider to resolve and instantiate resources
 import { ResourseContext, createSelectorWithModel } from "registry-hooks";
 
 const registry = {
