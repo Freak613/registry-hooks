@@ -12,7 +12,7 @@ This is proposal and reference implementaion of Service Locator pattern, where d
 npm install registry-hooks
 ```
 
-## HowTo
+## The Gist
 
 ```javascript
 // Create definition of entity with type and model of external dependency
