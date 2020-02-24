@@ -36,7 +36,7 @@ const Todo = {
 import { ResourseContext, createSelectorWithModel } from "registry-hooks";
 
 const registry = {
-  [Todo.type]: (state, { parameters: { id } }) => state.todos[id]
+  [Todo.type]: (state, { id }) => state.todos[id]
 };
 
 const AppResourcesProvider = ({ store, children }) => {
@@ -49,7 +49,7 @@ const AppResourcesProvider = ({ store, children }) => {
     // Returned value has to implement following minimal API:
     return {
       // Used for synchronously reading entity value
-      read: parameters => valueSelector(store.getState(), { parameters }),
+      read: parameters => valueSelector(store.getState(), parameters),
       // Used to notify dependent component about changed value
       subscribe: notify => {
         store.subscribe(() => notify());
