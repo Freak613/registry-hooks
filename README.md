@@ -4,14 +4,12 @@ Hooks for decoupling view from external dependencies.
 
 This is proposal and example implementaion of Service Locator pattern, where downstream components retrieve external dependencies from shared Provider, responsible for searching and instantiation.
 
-`useResource` hook API inspired by [rest-hooks](https://resthooks.io) library.
-
 Repo contains example implementation of following helper functions:
 
 - `createSelectorWithModel` - will create selector, that will softly apply model to changed data, removing nonexisting fields and applying defaults.
 - `createNotifierSubscription` - example implementation of subscription creator, designed for usage with notifier from [createNotifier](https://resthooks.io) library.
 - `createSelectorRegistry` - simple registry object used for resolving and instantiating stateful selectors.
-- `useResource` - hook for subscribing and reading resource data using given definition and parameters.
+- `useResource` - hook for subscribing and reading resource data using given definition and parameters. Its API inspired by [rest-hooks](https://resthooks.io) library.
 
 ## Install
 
