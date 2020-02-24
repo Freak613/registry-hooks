@@ -66,12 +66,12 @@ const AppResourcesProvider = ({ store, children }) => {
 
 import { useResource } from "registry-hooks";
 
-// useResource hook to request for external dependencies from Provider
+// useResource hook to request external dependencies from Provider
 const TodoItem = ({ id }) => {
   const todo = useResource(Todo, { id });
-  // Now your component doesn't care about source of resource entity,
-  // whether it's from some state or from network.
-  // It only knows about API that this entity will have
+  // Now your component have read and subscribed to changes in this entity.
+  // It doesn't know about source of resource entity,
+  // and only knows about API that this entity will have.
 
   return (
     <div>
