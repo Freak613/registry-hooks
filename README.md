@@ -144,7 +144,7 @@ const App = () => {
     switch (token) {
       case TodosSlice:
         return {
-          state: state => state.my.very.deep.slice,
+          state: state.my.very.deep.slice,
           actions: {
             addTodo: () => dispatch(),
             removeTodo: () => dispatch()
@@ -152,7 +152,7 @@ const App = () => {
         };
       case SelectedItemSlice:
         return {
-          state: state => state.some.other.slice,
+          state: state.some.other.slice,
           actions: {
             selectTodo: () => dispatch()
           }
